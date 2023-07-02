@@ -44,11 +44,11 @@ Before running this project, make sure you have the following prerequisites:
 3. Clone the repository on the EC2 instance:
 
    ```bash
-   git clone https://github.com/your-username/reddit-etl-pipeline.git
+      git clone https://github.com/your-username/reddit-etl-pipeline.git
    ```
 1. nstall the required Python dependencies:
   ```bash
-  pip install -r requirements.txt
+     pip install -r requirements.txt
   ```
 2. Configure Airflow:
 
@@ -67,20 +67,18 @@ Before running this project, make sure you have the following prerequisites:
 5. Initialize the Airflow database:
 
    ```bash
-      airflow initdb
+   airflow initdb
    ```
 
 ## Usage
 1. Start the Airflow web server:
 
    ```bash
-   Copy code
    airflow webserver
    ```
 2. Start the Airflow scheduler:
 
    ```bash
-   Copy code
    airflow scheduler
    ```
 3. Access the Airflow web interface:
