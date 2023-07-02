@@ -71,32 +71,37 @@ Before running this project, make sure you have the following prerequisites:
    ```
 
 ## Usage
-Start the Airflow web server:
+1. Start the Airflow web server:
 
-bash
-Copy code
-airflow webserver
-Start the Airflow scheduler:
+   ```bash
+   Copy code
+   airflow webserver
+   ```
+2. Start the Airflow scheduler:
 
-bash
-Copy code
-airflow scheduler
-Access the Airflow web interface:
+   ```bash
+   Copy code
+   airflow scheduler
+   ```
+3. Access the Airflow web interface:
 
-Open your web browser and navigate to http://<EC2-instance-public-IP>:8080.
+   Open your web browser and navigate to http://<EC2-instance-public-IP>:8080.
 
-Enable the Reddit ETL pipeline DAG:
+4. Enable the Reddit ETL pipeline DAG:
 
-In the Airflow web interface, click on "DAGs" in the top navigation menu.
-Find the reddit_etl_pipeline DAG and toggle the switch to enable it.
-Trigger the DAG:
+   + In the Airflow web interface, click on "DAGs" in the top navigation menu.
+   + Find the reddit_etl_pipeline DAG and toggle the switch to enable it.
+     
+5. Trigger the DAG:
 
-Click on the play button (▶) next to the reddit_etl_pipeline DAG to manually trigger it.
-You can also set up a schedule or configure other triggers based on your requirements.
-Monitor the pipeline:
+   + Click on the play button (▶) next to the reddit_etl_pipeline DAG to manually trigger it.
+   + You can also set up a schedule or configure other triggers based on your requirements.
 
-Check the Airflow web interface for the status of the tasks and overall progress of the pipeline.
-View the logs and task outputs to troubleshoot any issues that may arise.
+6. Monitor the pipeline:
+
+   + Check the Airflow web interface for the status of the tasks and overall progress of the pipeline.
+   + View the logs and task outputs to troubleshoot any issues that may arise.
+     
 ## Files
 
 reddit_etl.py: This file contains the Python ETL script for extracting, transforming, and loading data from Reddit API to AWS S3 using s3fs.
