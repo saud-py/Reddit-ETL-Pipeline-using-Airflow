@@ -46,10 +46,13 @@ Before running this project, make sure you have the following prerequisites:
    ```bash
       git clone https://github.com/your-username/reddit-etl-pipeline.git
    ```
-1. nstall the required Python dependencies:
+   
+1. Install the required Python dependencies:
+   
   ```bash
      pip install -r requirements.txt
   ```
+
 2. Configure Airflow:
 
    + Update the Airflow configuration file (airflow.cfg) with the necessary settings, such as       the executor, database connection, and parallelism.
